@@ -1,8 +1,23 @@
 aid: reality-reflection
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/reality-reflection.png
 name: Reality Reflection
-description: Reality Reflection is a company surfaced as a portfolio company of 500-global and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Reality Reflection is a technology studio, surfaced as a portfolio company of 500 Global,
+  whose website (realityreflection.com) is currently "under recovery" and points to two active
+  projects, MOSS LAND (moss.land, which describes itself as "Infrastructure for the AI Civilization")
+  and ROCKET.RUN (rocket.run). An enrichment pass on 2026-07-20 found no public developer portal, API
+  documentation, OpenAPI specification, SDK, .well-known metadata, llms.txt, or security program for
+  the company; the only machine-verifiable surface is the domain's live TLS/DNS security posture.
 url: https://raw.githubusercontent.com/api-evangelist/reality-reflection/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,15 +27,27 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Startup
+- Metaverse
+- Blockchain
+- Artificial Intelligence
+- Venture Backed
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/reality-reflection-domain-security.yml
 - type: Website
   url: https://realityreflection.com
